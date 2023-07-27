@@ -1,0 +1,33 @@
+pre {
+  --scrollbar-thumb: #3b5178;
+}
+
+.dark pre {
+  --scrollbar-thumb: #3b5178;
+}
+
+* {
+  --scrollbar-track: initial;
+  --scrollbar-thumb: initial;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
+  --scrollbar-thumb: #3b5178;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+.dark * {
+  --scrollbar-thumb: #3b5178;
+}
